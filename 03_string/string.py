@@ -63,7 +63,9 @@ print(c.split(":"))
 
 #실습
 #먼저 이메일을 입력받아서 변수에 저장, 해당 이메일에서 아이디만 추출해서 출력
-
+email = input("이메일을 입력하세요: ")
+print("이메일 아이디 :", email[:email.index("@")])
+print("이메일 아이디 :", email.split("@")[0])
 
 
 
