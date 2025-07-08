@@ -150,6 +150,11 @@ for i, item in enumerate(data):
 
 
 #인덱스가 짝수인 요소만 출력 (인덱스: 요소)
-#내일 풀이 해야함
+for i, item in enumerate(data):
+    if i % 2 == 0:
+        print(f"인덱스:{i}, 값:{item}")
+
+
+
 
 
