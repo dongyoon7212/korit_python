@@ -125,5 +125,22 @@ account1.withdraw(80000)
 # 정상적으로 실행된다면 해당 키의 값을 넣어둔 result 출력
 # 마지막은 항상 "완료!!"를 출력
 
+my_dict = {1: "사과", 2: "바나나", 3: "딸기", 4: "포도", 5: "수박"}
+
+try:
+    key_input = input("딕셔너리에서 찾을 키(숫자)를 입력해주세요 : ")
+    key = int(key_input) #ValueError가 발생할 수 있는 코드
+    result = my_dict[key] #KeyError가 발생할 수 있는 코드
+except ValueError:
+    print("숫자를 입력해 주세요.")
+except KeyError:
+    print("해당 키는 존재하지 않습니다.")
+else:
+    print(result)
+finally:
+    print("완료!!")
+
+
+
 
 
